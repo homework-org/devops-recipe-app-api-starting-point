@@ -40,7 +40,7 @@ resource "aws_db_instance" "main" {
   auto_minor_version_upgrade = true
   instance_class             = "db.t4g.micro"
   username                   = var.db_username
-  password                   = "CR2n16w257"
+  password                   = var.db_password
   skip_final_snapshot        = true
   db_subnet_group_name       = aws_db_subnet_group.main.name
   multi_az                   = false
